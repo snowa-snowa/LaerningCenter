@@ -142,9 +142,8 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 SWAGGER_SETTINGS = {
-    'LOGOUT_URL': 'http://127.0.0.1:8000/logout/',
-    'LOGIN_URL': 'http://127.0.0.1:8000/login/',
+    'LOGOUT_URL': '/logout/',
+    'LOGIN_URL': '/login/',
 }
 
-LOGIN_URL = 'http://127.0.0.1:8000/login/'
- 
+LOGIN_URL = '/login/'

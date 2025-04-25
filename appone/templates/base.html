@@ -18,6 +18,7 @@
 
     <div class="flex space-x-6">
         {% if request.user.is_authenticated %}
+            <a href="https://www.youtube.com/watch?v=nnLhx6zzUss&list=PLXPrA9Gm6TC3gBIOsIv8QgUZoYAT-hHFx&index=6/" class="btn btn-light hover:bg-gray-700 rounded-md px-1 py-2 transition duration-300 hover:scale-110">{{ user }}</a>
             <a href="/courses/" class="btn btn-light hover:bg-gray-700 rounded-md px-1 py-2 transition duration-300 hover:scale-110">Курсы</a>
             <a href="/teachers/" class="btn btn-light hover:bg-gray-700 rounded-md px-1 py-2 transition duration-300 hover:scale-110">Учителя</a>
             <a href="/tests/" class="btn btn-light hover:bg-gray-700 rounded-md px-1 py-2 transition duration-300 hover:scale-110">Тесты</a>
@@ -25,6 +26,7 @@
             <a href="/logout/" class="btn btn-light hover:bg-gray-700 rounded-md px-1 py-2 transition duration-300 hover:scale-110">Выйти</a>
             <a href="/signup/" class="btn btn-light hover:bg-gray-700 rounded-md px-1 py-2 transition duration-300 hover:scale-110">Регистрация</a>
         {% else %}
+            <a href="https://ru.pinterest.com/pin/921408405017608450/" class="btn btn-light hover:bg-gray-700 rounded-md px-1 py-2 transition duration-300 hover:scale-110">Аноним</a>
             <a href="/courses/" class="btn btn-light hover:bg-gray-700 rounded-md px-1 py-2 transition duration-300 hover:scale-110">Курсы</a>
             <a href="/teachers/" class="btn btn-light hover:bg-gray-700 rounded-md px-1 py-2 transition duration-300 hover:scale-110">Учителя</a>
             <a href="/tests/" class="btn btn-light hover:bg-gray-700 rounded-md px-1 py-2 transition duration-300 hover:scale-110">Тесты</a>
@@ -41,11 +43,6 @@
     <a href="/swagger/" class="btn btn-light hover:bg-gray-700 rounded-md px-1 py-2 transition duration-300 hover:scale-110">Swagger</a>
     <a href="/redoc/" class="btn btn-light hover:bg-gray-700 rounded-md px-1 py-2 transition duration-300 hover:scale-110">Redoc</a>
     <a href="/api/" class="btn btn-light hover:bg-gray-700 rounded-md px-1 py-2 transition duration-300 hover:scale-110">Api</a>
-    {% if request.user.is_authenticated %}
-    <a href="https://www.youtube.com/watch?v=nnLhx6zzUss&list=PLXPrA9Gm6TC3gBIOsIv8QgUZoYAT-hHFx&index=6/" class="btn btn-light hover:bg-gray-700 rounded-md px-1 py-2 transition duration-300 hover:scale-110">{{ user }}</a>
-    {% else %}
-    <a href="https://ru.pinterest.com/pin/921408405017608450/" class="btn btn-light hover:bg-gray-700 rounded-md px-1 py-2 transition duration-300 hover:scale-110">Аноним</a>
-    {% endif %}
   </div>
 </div>
 
@@ -113,7 +110,7 @@
                 <ul class="space-y-2">
                     <li><a href="https://t.me/snowa8snowa/" class="text-lg text-cyan-500 hover:text-cyan-400">Telegram</a></li>
                     <li><a href="https://github.com/snowa-snowa/" class="text-lg text-cyan-500 hover:text-cyan-400">Github</a></li>
-                    <li><a href="http://127.0.0.1:8000/snow/" class="text-lg text-cyan-500 hover:text-cyan-400">Благодарности</a></li>
+                    <li><a href="/snow/" class="text-lg text-cyan-500 hover:text-cyan-400">Благодарности</a></li>
                 </ul>
             </div>
         </div>
